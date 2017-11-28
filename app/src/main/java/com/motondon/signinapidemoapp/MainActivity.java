@@ -344,7 +344,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             Set<Scope> grantedScopes = mGoogleSignInAccount.getGrantedScopes();
             Log.d(TAG, "handleSignInResult() - GrantedScopes: " + grantedScopes);
 
-            tvPersonId.setText("*********************************");
+            tvPersonId.setText(mGoogleSignInAccount.getId());
             tvPersonDisplayName.setText(mGoogleSignInAccount.getDisplayName());
             tvPersonGivenName.setText(mGoogleSignInAccount.getGivenName());
             tvPersonFamilyName.setText(mGoogleSignInAccount.getFamilyName());
